@@ -35,7 +35,7 @@ EXPO_PUBLIC_CONVEX_URL=<get_it_from_convex>
 
 ```bash
 npm install
-npx expo
+npx expo start
 ```
 
 ## Run the Convex db
@@ -46,12 +46,15 @@ npx expo
 npx convex dev
 ```
 
+## to export the app
 
+```bash
+npx expo export
+```
 
 ## 🧑‍🍳 App Features Overview
 
 - 📝 **Todos Tab**
-
   - ➕ Add new tasks
   - ✅ Mark as completed / uncompleted
   - 📝 Edit existing tasks
@@ -59,7 +62,6 @@ npx convex dev
   - 📊 Live **progress bar** at the top
 
 - ⚙️ **Settings Tab**
-
   - 📈 View task stats (total, completed, remaining)
   - 🌙 Toggle **Dark Mode** (actually works!)
   - 🔔 Notification toggle (UI only)
