@@ -7,8 +7,8 @@ const TabsLayout = () => {
     <Tabs
       screenOptions={{
         headerShown: false,
-        tabBarActiveTintColor: "red",
-        tabBarInactiveTintColor: "green",
+        tabBarActiveTintColor: "green",
+        tabBarInactiveTintColor: "grey",
         tabBarStyle: {
           backgroundColor: "#1e293b",
           borderTopWidth: 1,
@@ -27,18 +27,18 @@ const TabsLayout = () => {
         name="index"
         options={{
           title: "Todos",
-          tabBarIcon({ color, size }) {
-            <Ionicons name="flash-outline" size={size} color={color} />;
-          },
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="flash-outline" size={size} color={color} />
+          ),
         }}
       />
       <Tabs.Screen
         name="settings"
         options={{
           title: "Settings",
-          tabBarIcon({ color, size }) {
-            <Ionicons name="settings" size={size} color={color} />;
-          },
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="settings" size={size} color={color} />
+          ),
         }}
       />
     </Tabs>
